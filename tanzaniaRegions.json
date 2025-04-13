@@ -1,0 +1,47 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Morogoro",
+                "crops": [
+                    { "name_en": "Maize", "name_sw": "Mahindi" },
+                    { "name_en": "Cassava", "name_sw": "Muhogo" }
+                ]
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [[[37.0, -7.0], [38.0, -7.0], [38.0, -6.0], [37.0, -6.0], [37.0, -7.0]]]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mbeya",
+                "crops": [
+                    { "name_en": "Rice", "name_sw": "Mchele" },
+                    { "name_en": "Banana", "name_sw": "Ndizi" }
+                ]
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [[[33.0, -9.0], [34.0, -9.0], [34.0, -8.0], [33.0, -8.0], [33.0, -9.0]]]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Mwanza",
+                "crops": [
+                    { "name_en": "Sweet Potatoes", "name_sw": "Viazi Vitamu" },
+                    { "name_en": "Groundnuts", "name_sw": "Karanga" }
+                ]
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [[[32.0, -3.0], [33.0, -3.0], [33.0, -2.0], [32.0, -2.0], [32.0, -3.0]]]
+            }
+        }
+    ]
+}

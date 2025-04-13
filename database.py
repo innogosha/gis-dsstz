@@ -1,14 +1,17 @@
+import os
 from sqlalchemy import create_engine, MetaData
+from dotenv import load_dotenv
 
-DATABASE_URL = "postgresql://username:password@hostname:5432/database_name"
+# Load environment variables
+load_dotenv()
 
-# Create the database connection
+DATABASE_URL = os.getenv("DATABASE_URL")
 engine = create_engine(DATABASE_URL)
 metadata = MetaData()
 
-# Initialize the database connection
+# Test connection
 try:
     with engine.connect() as connection:
         print("Database connected successfully!")
 except Exception as e:
-    print("Database connection failed:", str(e))
+    print("Database connection failed:", e)
